@@ -70,7 +70,7 @@ The repository includes the output currently produced by the demo script:
 
 If you use this code, please cite the accompanying paper:
 
-> M. Bulínová, A. Rouillard, K. Larsson, X. Xu, J. Walker, C. Olid, J. Rydberg, C. Gudasz, S. E. Kjellman, G. Panieri, C. I. Czimczik, A. Schomacker (2026). *The ancient carbon elevator: Quantifying legacy effect on methane emissions by northern lakes*. Submitted manuscript. DOI: TBD
+> M. Bulínová, A. Rouillard, K. Larsson, X. Xu, J. Walker, C. Olid, J. Rydberg, C. Gudasz, S. E. Kjellman, G. Panieri, C. I. Czimczik, A. Schomacker (2026). *Legacy carbon stocks fuel methane diffusion from northern lake sediments*. Submitted manuscript. DOI: TBD
 
 A machine-readable citation file is also included as `CITATION.cff`.
 
