@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you use this software, please cite the accompanying paper."
-title: "Age-Structured Methane Diagenetic Model (minimal working example)"
+title: "Age-Structured Methane Diagenetic Model"
 authors:
   - family-names: "Larsson"
     given-names: "Karl"
@@ -10,9 +10,7 @@ authors:
     given-names: "Alexandra"
   - family-names: "Gudasz"
     given-names: "Cristian"
-version: "0.1.0"
-date-released: 2026-04-05
-repository-code: "https://github.com/placeholder/age-structured-methane-model"
+repository-code: "https://github.com/KarlLarssonUmU/age-structured-methane-diagenesis"
 preferred-citation:
   type: article
   authors:
@@ -39,8 +37,7 @@ preferred-citation:
     - family-names: "Czimczik"
       given-names: "Claudia I."
     - family-names: "Schomacker"
-      given-names: "nders"
+      given-names: "Anders"
   title: "Legacy carbon stocks fuel methane diffusion from northern lake sediments"
   journal: "Submitted paper"
   year: 2026
-  doi: ""

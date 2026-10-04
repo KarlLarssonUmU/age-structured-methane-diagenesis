@@ -1,6 +1,7 @@
-% P.I. also on advection part, assuming constant v
-% this means that the natural flux in the boundary term is
-% (-coeff(x) \partial_n u + v u) = J_tot
+% Conservative weak form of ( -coeff*u' + v*u )' + kcoeff*u = f.
+% Depth increases to the right; v is a signed downward transport velocity.
+% For upward Darcy magnitude q, pass v=-q. Boundary flux is handled
+% separately, leaving zero total flux as the natural bottom condition.
 function [A,M,B,TRp,TRt,p,t] = assemble1dAdvectionDiffusion(a,b,N,type,coeff,kcoeff,f,v)
 if ~exist('f','var')
     f = @(x) 0;
@@ -14,7 +15,7 @@ TRp = linspace(a,b,N+1)'; TRt = [1:N;2:N+1]';
 
 % assemble stiffness matrix
 nel = size(t,1); nbf = size(t,2);
-ndof = max(max(t)); A = sparse(ndof,ndof); M = sparse(ndof,ndof);
+ndof = max(t,[],'all'); A = sparse(ndof,ndof); M = sparse(ndof,ndof);
 B = zeros(ndof,1);
 [wvec,cmat]=quadratureGaussPoints(2*nbf,1);
 for k=1:nel
